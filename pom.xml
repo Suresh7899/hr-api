@@ -8,6 +8,11 @@
   <name>hr-api Maven Webapp</name>
   <url>http://maven.apache.org</url>
 	
+  <properties>
+	<docker.image.prefix>kammana</docker.image.prefix>
+	<sonar.host.url>http://13.212.204.17:9000/</sonar.host.url>
+  </properties>
+	
   <dependencies>
     <dependency>
 	    <groupId>com.itextpdf</groupId>
