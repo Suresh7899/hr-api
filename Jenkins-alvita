@@ -26,7 +26,7 @@ pipeline{
                        [
                             artifactId: 'hr-api', 
                             classifier: '', 
-                            file: "target/myweb-1.2.war", 
+                            file: "target/hr-api-1.2.war", 
                             type: 'war'
                        ]
                   ], 
