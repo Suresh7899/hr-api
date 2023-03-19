@@ -26,7 +26,7 @@ pipeline{
                        [
                             artifactId: 'hr-api', 
                             classifier: '', 
-                            file: "target/hr-api-1.2.war", 
+                            file: "target/myweb-1.2.war", 
                             type: 'war'
                        ]
                   ], 
@@ -43,7 +43,7 @@ pipeline{
             steps{
                sshagent(['ssh-agent']) {
                 sh """
-                    scp -o StrictHostKeyChecking=no target/hr-api-1.2.war  ec2-user@172.31.33.144:/home/ec2-user/apache-tomcat-9.0.73/webapps/
+                    scp -o StrictHostKeyChecking=no target/myweb-1.2.war  ec2-user@172.31.33.144:/home/ec2-user/apache-tomcat-9.0.73/webapps/
                     
                     ssh ec2-user@172.31.33.144 /home/ec2-user/apache-tomcat-9.0.73/bin/shutdown.sh
                     
