@@ -4,7 +4,7 @@
   <groupId>in.javahome</groupId>
   <artifactId>hr-api</artifactId>
   <packaging>war</packaging>
-  <version>1.2</version>
+  <version>1.2-snapshot</version>
   <name>hr-api Maven Webapp</name>
   <url>http://maven.apache.org</url>
 	
@@ -29,7 +29,7 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://35.78.238.154:8081/repository/sample-snapshots/</url>
+		    <url>http://13.212.71.64:8081/repository/sample/</url>
 		 </snapshotRepository>
 		
 		<repository>
