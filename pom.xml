@@ -26,6 +26,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://35.78.238.154:8081/repository/sample-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://13.212.71.64:8081/repository/sample-release/</url>
+		</repository>
+  	</distributionManagement>
   <build>
 	  <finalName>hr-api</finalName>
 	  <plugins>
